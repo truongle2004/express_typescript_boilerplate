@@ -2,9 +2,9 @@ import 'reflect-metadata'
 import { container } from 'tsyringe'
 import { IGetTodoRepository } from './repositories/get-todo.repository.interface'
 import { GetTodoRepository } from './repositories/impl/get-todo.repository'
-import { IGetTodoService } from './services/get-todo.service.interface'
-import { GetTodoService } from './services/impl/get-todo.service'
 import { TodoController } from './controllers/todo.controller'
+import type { IGetTodoService } from './services/get-todo.service.interface'
+import { GetTodoService } from './services/impl/get-todo.service'
 
 // register interface implementation
 container.register<IGetTodoRepository>('IGetTodoRepository', {

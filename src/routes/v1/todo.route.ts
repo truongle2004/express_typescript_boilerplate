@@ -1,5 +1,5 @@
 import { Router } from 'express'
-import { TodoController } from '../controllers/todo.controller'
+import { TodoController } from '../../modules/todo/controllers/todo.controller'
 import { container } from 'tsyringe'
 import 'reflect-metadata'
 

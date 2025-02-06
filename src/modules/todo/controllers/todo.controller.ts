@@ -1,6 +1,6 @@
 import { inject, injectable } from 'tsyringe'
-import type { IGetTodoService } from '../services/get-todo.service.interface'
 import type { NextFunction, Request, Response } from 'express'
+import type { IGetTodoService } from '../services/get-todo.service.interface'
 
 @injectable()
 export class TodoController {
