@@ -1,3 +1,3 @@
 export interface IGetTodoRepository {
-  execute(): string
+  execute(): Promise<string>
 }

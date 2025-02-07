@@ -1,7 +1,7 @@
-import { inject, injectable } from 'tsyringe'
-import { IGetTodoService } from '../get-todo.service.interface'
 import 'reflect-metadata'
+import { inject, injectable } from 'tsyringe'
 import type { IGetTodoRepository } from '../../repositories/get-todo.repository.interface'
+import { IGetTodoService } from '../get-todo.service.interface'
 
 @injectable()
 export class GetTodoService implements IGetTodoService {
@@ -12,6 +12,8 @@ export class GetTodoService implements IGetTodoService {
 
   execute(): string {
     // TODO: retrieve data from db
+    this.getTodoRepository.execute()
+
     return 'get_to_do'
   }
 }
